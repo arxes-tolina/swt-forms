@@ -1,0 +1,5 @@
+*.jar
+*.zip
+bin
+*.un~
+.DS_Store

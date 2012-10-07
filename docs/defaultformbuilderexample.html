@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>SwtForms - DefaultFormBuilder Example</title>
+</head>
+<body>
+<h1>SwtForms</h1>
+<h3>DefaultFormBuilder Example</h3>
+<h4>Screenshot:</h4>
+<table border="0"><tr>
+<td style="vertical-align: top;">
+	<img src="shoot3.png" alt="Example Image Windows"><br>
+</td>
+<td style="vertical-align: top;">
+<img src="shoot3linux.png" alt="Example Image Linux"><br>
+</td>
+</tr></table>
+<br>
+<pre>/*<br> * Created on 22.03.2004<br> *<br> */<br>package net.ffxml.swtforms.test;<br><br>import net.ffxml.swtforms.extras.DefaultFormBuilder;<br>import net.ffxml.swtforms.layout.FormLayout;<br><br>import org.eclipse.swt.SWT;<br>import org.eclipse.swt.widgets.Combo;<br>import org.eclipse.swt.widgets.Display;<br>import org.eclipse.swt.widgets.Shell;<br>import org.eclipse.swt.widgets.Text;<br><br>/**<br> * @author Flo<br> *<br> */<br>public class SWTTest7<br>{<br>	private static Shell shell;<br>	private static Display display;<br><br>	public static void main(String[] args)<br>	{<br>		SWTTest7 test = new SWTTest7();<br>		SWTTest7.display = new Display();<br>		SWTTest7.shell = new Shell(SWTTest7.display);<br><br>		test.createContents(SWTTest7.shell);<br>		SWTTest7.shell.pack();<br>		SWTTest7.shell.setText("SWTTest7");<br>		SWTTest7.shell.open();<br><br>		while (!SWTTest7.shell.isDisposed())<br>		{<br>			if (!SWTTest7.display.readAndDispatch())<br>				SWTTest7.display.sleep();<br>		}<br>	}<br><br>	protected void createContents(Shell shell)<br>	{<br>		FormLayout layout =<br>			new FormLayout(<br>				"right:max(40dlu;pref), 3dlu, 80dlu, 7dlu, "<br>					+ "right:max(40dlu;pref), 3dlu, 80dlu",<br>				"");<br>		// add rows dynamically<br>		DefaultFormBuilder builder = new DefaultFormBuilder(shell, layout);<br>		builder.setDefaultDialogBorder();<br><br>		builder.appendSeparator("Flange");<br><br>		builder.append("Identifier", new Text(shell, SWT.BORDER));<br>		builder.nextLine();<br><br>		builder.append("PTI [kW]", new Text(shell, SWT.BORDER));<br>		builder.append("Power [kW]", new Text(shell, SWT.BORDER));<br><br>		builder.append("s [mm]", new Text(shell, SWT.BORDER));<br>		builder.nextLine();<br><br>		builder.appendSeparator("Diameters");<br><br>		builder.append("da [mm]", new Text(shell, SWT.BORDER));<br>		builder.append("di [mm]", new Text(shell, SWT.BORDER));<br><br>		builder.append("da2 [mm]", new Text(shell, SWT.BORDER));<br>		builder.append("di2 [mm]", new Text(shell, SWT.BORDER));<br><br>		builder.append("R [mm]", new Text(shell, SWT.BORDER));<br>		builder.append("D [mm]", new Text(shell, SWT.BORDER));<br><br>		builder.appendSeparator("Criteria");<br><br>		builder.append("Location", buildLocationComboBox(shell));<br>		builder.append("k-factor", new Text(shell, SWT.BORDER));<br><br>		builder.appendSeparator("Bolts");<br><br>		builder.append("Material", buildMaterialComboBox(shell));<br>		builder.nextLine();<br><br>		builder.append("Numbers", new Text(shell, SWT.BORDER));<br>		builder.nextLine();<br><br>		builder.append("ds [mm]", new Text(shell, SWT.BORDER));<br>	}<br><br>	protected Combo buildLocationComboBox(Shell shell)<br>	{<br>		Combo locations = new Combo(shell, SWT.BORDER);<br>		locations.setItems(<br>			new String[] { "Location 1", "Location 2", "Location 3" });<br>		return locations;<br>	}<br><br>	protected Combo buildMaterialComboBox(Shell shell)<br>	{<br>		Combo materials = new Combo(shell, SWT.BORDER);<br>		materials.setItems(<br>			new String[] { "Material 1", "Material 2", "Material 3" });<br>		return materials;<br>	}<br>}<br></pre>
+<h3>Links</h3>
+<ul>
+  <li>The original: <a href="http://www.jgoodies.com">www.jgoodies.com</a></li>
+  <li>SwtForms homepage: <a href="http://ffxml.net/swtforms">ffxml.net/swtforms</a></li>
+</ul>
+</body>
+</html>

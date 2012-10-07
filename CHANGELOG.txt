@@ -1,0 +1,23 @@
+Version 0.8.2 - January 21, 2004: 
+Renamed project from "SharpLayout" to "SwtForms"
+
+Version 0.8.3 - January 26, 2004: 
+ButtonBarFactory didn't work yet. Fixed. See API Docs for usage. 
+Needs a review for a more SWT specific way.
+
+Version 0.8.4 - March 22, 2004: 
++ DefaultFormBuilder & I15dPanelBuilder from the extras package. Thanks Zohar.
+
+Version 0.8.5 - April 10, 2005: 
+Removed dependency on awt Insets class by implementing an own Insets class. 
+Reason: problems on Mac OS X. Thanks Praveen.
+
+Version 0.9.0 - May 5, 2008 (experimental): 
+Updated to the codebase of JGoodies Forms 1.0.7. 
+Many thanks to Stefan Hansel, who did a thorough job on this.
+
+Version 0.9.1 - October 8, 2008:
+Fixed bug in DefaultFormBuilder concerning labels with mnemonic.
+Thanks Stefan.
+Deprecated DefaultFormBuilder and I15dPanelBuilder in extras package. 
+They are now in the builder package.  

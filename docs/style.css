@@ -1,0 +1,128 @@
+body {
+  font-family: Trebuchet MS, Verdana, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  font-size: smaller;
+}
+
+a {
+  font-family: Trebuchet MS, Verdana, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #5555bb;
+}
+
+pre {
+	font-size: 9pt;
+}
+
+a:hover{ text-decoration: underline;}
+
+.contents {
+  font-family: Verdana, Helvetica, sans-serif;
+  background: #ffffff;
+  margin-right: 10%;
+  margin-left: 0%;
+  padding: 1.5em;
+  border: 1px solid;
+  border-color: #bbbbbb;
+}
+
+
+
+.pageHeader {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 200%
+}
+
+
+
+.subHeader{
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.menu{
+  margin-left: 0%;
+  margin-right: 10%;
+  background: #bbbbbb;
+  color: #dddddd;
+}
+
+.menu a{
+  color: #ffffff;
+}
+
+.menu a:hover {
+ color: #5555bb;
+ text-decoration: none
+}
+
+.backlinks{
+  font-size: small;
+  font-style: italic;
+}
+
+.fakeLink {
+  font-family: Verdana, Helvetica, sans-serif;
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+.footnote {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: small;
+}
+
+.red {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 12px ; color: #ff0000;
+}
+
+ul {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+th, td {
+  font-size: smaller;
+}
+
+td.recent,th.recent{
+  background: #ffffff
+}
+
+.logo {
+  vertical-align: baseline;
+  border-width: 1px;
+  border-color: #bbbbbb;
+  color: #ffffff;
+}
+
+hr {
+  border: solid silver;
+  height: 1px;
+}
+
+.old {
+
+}
+
+.notify {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: smaller ;
+}
+
+.searchresult{
+  background-color: gainsboro
+}
+
+h3 {
+	border-bottom: 1px solid #b0b0b0;
+}
